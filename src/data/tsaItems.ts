@@ -10,7 +10,7 @@ export interface TSAItem {
 }
 
 export const tsaItems: TSAItem[] = [
-  // Liquids
+  // Liquids - Top 10
   {
     id: 'water-bottle',
     name: 'Water Bottle',
@@ -51,8 +51,68 @@ export const tsaItems: TSAItem[] = [
     rules: 'Must be 3.4 oz (100ml) or less per container for carry-on and fit in quart bag.',
     category: 'Liquids'
   },
+  {
+    id: 'contact-solution',
+    name: 'Contact Lens Solution',
+    aliases: ['contact solution', 'eye drops'],
+    carryOn: 'restricted',
+    checkedBag: 'allowed',
+    description: 'Contact lens solution must follow 3-1-1 rule.',
+    rules: 'Must be 3.4 oz (100ml) or less for carry-on. Larger containers in checked bags.',
+    category: 'Liquids'
+  },
+  {
+    id: 'hand-sanitizer',
+    name: 'Hand Sanitizer',
+    aliases: ['sanitizer', 'hand gel'],
+    carryOn: 'restricted',
+    checkedBag: 'allowed',
+    description: 'Hand sanitizer follows standard liquid restrictions.',
+    rules: 'Must be 3.4 oz (100ml) or less for carry-on and fit in quart bag.',
+    category: 'Liquids'
+  },
+  {
+    id: 'sunscreen',
+    name: 'Sunscreen',
+    aliases: ['sunscreen lotion', 'spf'],
+    carryOn: 'restricted',
+    checkedBag: 'allowed',
+    description: 'Sunscreen is considered a liquid/gel.',
+    rules: 'Must be 3.4 oz (100ml) or less for carry-on and fit in quart bag.',
+    category: 'Liquids'
+  },
+  {
+    id: 'deodorant',
+    name: 'Deodorant',
+    aliases: ['antiperspirant'],
+    carryOn: 'restricted',
+    checkedBag: 'allowed',
+    description: 'Deodorant follows liquid restrictions if gel or liquid.',
+    rules: 'Gel/liquid deodorant must be 3.4 oz (100ml) or less for carry-on. Solid deodorant has no restrictions.',
+    category: 'Liquids'
+  },
+  {
+    id: 'mouthwash',
+    name: 'Mouthwash',
+    aliases: ['dental rinse'],
+    carryOn: 'restricted',
+    checkedBag: 'allowed',
+    description: 'Mouthwash is considered a liquid.',
+    rules: 'Must be 3.4 oz (100ml) or less for carry-on and fit in quart bag.',
+    category: 'Liquids'
+  },
+  {
+    id: 'nail-polish',
+    name: 'Nail Polish',
+    aliases: ['nail polish remover'],
+    carryOn: 'restricted',
+    checkedBag: 'allowed',
+    description: 'Nail polish and remover follow liquid restrictions.',
+    rules: 'Must be 3.4 oz (100ml) or less for carry-on and fit in quart bag.',
+    category: 'Liquids'
+  },
 
-  // Electronics
+  // Electronics - Top 10
   {
     id: 'laptop',
     name: 'Laptop',
@@ -93,8 +153,68 @@ export const tsaItems: TSAItem[] = [
     rules: 'Film cameras with film should go through hand inspection to avoid X-ray damage.',
     category: 'Electronics'
   },
+  {
+    id: 'tablet',
+    name: 'Tablet',
+    aliases: ['ipad', 'tablet computer'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Tablets are allowed in both carry-on and checked bags.',
+    rules: 'Must be removed from bag during screening. Keep easily accessible.',
+    category: 'Electronics'
+  },
+  {
+    id: 'headphones',
+    name: 'Headphones',
+    aliases: ['earbuds', 'wireless headphones'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Headphones are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions. Wireless headphones with batteries should be in carry-on.',
+    category: 'Electronics'
+  },
+  {
+    id: 'gaming-console',
+    name: 'Gaming Console',
+    aliases: ['nintendo switch', 'ps5', 'xbox'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Gaming consoles are allowed in both carry-on and checked bags.',
+    rules: 'Must be removed from bag during screening. Keep controllers and accessories together.',
+    category: 'Electronics'
+  },
+  {
+    id: 'kindle',
+    name: 'E-Reader',
+    aliases: ['kindle', 'ebook reader'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'E-readers are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions. Keep easily accessible for screening.',
+    category: 'Electronics'
+  },
+  {
+    id: 'smartwatch',
+    name: 'Smartwatch',
+    aliases: ['apple watch', 'fitbit'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Smartwatches are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions. Can be worn through security.',
+    category: 'Electronics'
+  },
+  {
+    id: 'bluetooth-speaker',
+    name: 'Bluetooth Speaker',
+    aliases: ['portable speaker', 'wireless speaker'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Bluetooth speakers are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions. Lithium batteries should be in carry-on if removable.',
+    category: 'Electronics'
+  },
 
-  // Sharp Objects
+  // Sharp Objects - Top 10
   {
     id: 'scissors',
     name: 'Scissors',
@@ -125,8 +245,78 @@ export const tsaItems: TSAItem[] = [
     rules: 'Disposable and cartridge razors allowed. Safety razors without blades allowed. Loose razor blades prohibited.',
     category: 'Sharp Objects'
   },
+  {
+    id: 'nail-clippers',
+    name: 'Nail Clippers',
+    aliases: ['nail scissors'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Nail clippers are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions. Standard nail clippers are permitted.',
+    category: 'Sharp Objects'
+  },
+  {
+    id: 'tweezers',
+    name: 'Tweezers',
+    aliases: ['eyebrow tweezers'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Tweezers are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions. Standard tweezers are permitted.',
+    category: 'Sharp Objects'
+  },
+  {
+    id: 'sewing-needles',
+    name: 'Sewing Needles',
+    aliases: ['needles', 'thread'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Sewing needles are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions. Keep in a case to avoid injury.',
+    category: 'Sharp Objects'
+  },
+  {
+    id: 'box-cutter',
+    name: 'Box Cutter',
+    aliases: ['utility knife', 'razor blade'],
+    carryOn: 'prohibited',
+    checkedBag: 'allowed',
+    description: 'Box cutters are prohibited in carry-on luggage.',
+    rules: 'Must be packed in checked baggage only.',
+    category: 'Sharp Objects'
+  },
+  {
+    id: 'ice-skates',
+    name: 'Ice Skates',
+    aliases: ['skates'],
+    carryOn: 'prohibited',
+    checkedBag: 'allowed',
+    description: 'Ice skates are prohibited in carry-on luggage.',
+    rules: 'Must be packed in checked baggage. Blades must be covered.',
+    category: 'Sharp Objects'
+  },
+  {
+    id: 'sword',
+    name: 'Sword',
+    aliases: ['sword', 'blade weapon'],
+    carryOn: 'prohibited',
+    checkedBag: 'restricted',
+    description: 'Swords are prohibited in carry-on and restricted in checked bags.',
+    rules: 'May be allowed in checked bags if properly declared and secured. Check with airline.',
+    category: 'Sharp Objects'
+  },
+  {
+    id: 'axe',
+    name: 'Axe',
+    aliases: ['hatchet', 'chopping tool'],
+    carryOn: 'prohibited',
+    checkedBag: 'allowed',
+    description: 'Axes are prohibited in carry-on luggage.',
+    rules: 'Must be packed in checked baggage. Blade must be covered.',
+    category: 'Sharp Objects'
+  },
 
-  // Medications
+  // Medical - Top 10
   {
     id: 'prescription-medication',
     name: 'Prescription Medication',
@@ -147,8 +337,88 @@ export const tsaItems: TSAItem[] = [
     rules: 'Unlimited quantities allowed. Keep with syringes/supplies. Declare at checkpoint.',
     category: 'Medical'
   },
+  {
+    id: 'cpap-machine',
+    name: 'CPAP Machine',
+    aliases: ['sleep apnea machine', 'breathing machine'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'CPAP machines are allowed in both carry-on and checked bags.',
+    rules: 'Does not count toward carry-on limit. Keep easily accessible.',
+    category: 'Medical'
+  },
+  {
+    id: 'wheelchair',
+    name: 'Wheelchair',
+    aliases: ['mobility device'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Wheelchairs are allowed and do not count toward baggage limits.',
+    rules: 'No restrictions. Airlines provide assistance for mobility devices.',
+    category: 'Medical'
+  },
+  {
+    id: 'oxygen-tank',
+    name: 'Oxygen Tank',
+    aliases: ['oxygen cylinder', 'medical oxygen'],
+    carryOn: 'restricted',
+    checkedBag: 'restricted',
+    description: 'Oxygen tanks require special approval and documentation.',
+    rules: 'Must be FAA-approved. Requires medical documentation and airline approval.',
+    category: 'Medical'
+  },
+  {
+    id: 'thermometer',
+    name: 'Thermometer',
+    aliases: ['medical thermometer'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Thermometers are allowed in both carry-on and checked bags.',
+    rules: 'Mercury thermometers prohibited. Digital thermometers allowed.',
+    category: 'Medical'
+  },
+  {
+    id: 'first-aid-kit',
+    name: 'First Aid Kit',
+    aliases: ['medical kit', 'bandages'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'First aid kits are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions on basic first aid supplies. Sharp objects must follow sharp object rules.',
+    category: 'Medical'
+  },
+  {
+    id: 'hearing-aid',
+    name: 'Hearing Aid',
+    aliases: ['hearing device'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Hearing aids are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions. Can be worn through security.',
+    category: 'Medical'
+  },
+  {
+    id: 'crutches',
+    name: 'Crutches',
+    aliases: ['mobility aid'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Crutches are allowed and do not count toward baggage limits.',
+    rules: 'No restrictions. Airlines provide assistance for mobility devices.',
+    category: 'Medical'
+  },
+  {
+    id: 'medical-device',
+    name: 'Medical Device',
+    aliases: ['medical equipment'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Medical devices are generally allowed in both carry-on and checked bags.',
+    rules: 'May require medical documentation. Keep easily accessible.',
+    category: 'Medical'
+  },
 
-  // Tools
+  // Tools - Top 10
   {
     id: 'screwdriver',
     name: 'Screwdriver',
@@ -169,8 +439,88 @@ export const tsaItems: TSAItem[] = [
     rules: 'All hammers must be packed in checked baggage.',
     category: 'Tools'
   },
+  {
+    id: 'drill',
+    name: 'Drill',
+    aliases: ['power drill', 'electric drill'],
+    carryOn: 'prohibited',
+    checkedBag: 'allowed',
+    description: 'Drills are prohibited in carry-on luggage.',
+    rules: 'Must be packed in checked baggage. Remove batteries if possible.',
+    category: 'Tools'
+  },
+  {
+    id: 'wrench',
+    name: 'Wrench',
+    aliases: ['adjustable wrench'],
+    carryOn: 'restricted',
+    checkedBag: 'allowed',
+    description: 'Wrenches have size restrictions for carry-on.',
+    rules: 'Must be shorter than 7 inches to be allowed in carry-on luggage.',
+    category: 'Tools'
+  },
+  {
+    id: 'pliers',
+    name: 'Pliers',
+    aliases: ['wire cutters'],
+    carryOn: 'restricted',
+    checkedBag: 'allowed',
+    description: 'Pliers have size restrictions for carry-on.',
+    rules: 'Must be shorter than 7 inches to be allowed in carry-on luggage.',
+    category: 'Tools'
+  },
+  {
+    id: 'saw',
+    name: 'Saw',
+    aliases: ['hand saw', 'hacksaw'],
+    carryOn: 'prohibited',
+    checkedBag: 'allowed',
+    description: 'Saws are prohibited in carry-on luggage.',
+    rules: 'Must be packed in checked baggage. Blade must be covered.',
+    category: 'Tools'
+  },
+  {
+    id: 'level',
+    name: 'Level',
+    aliases: ['bubble level'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Levels are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions on standard levels.',
+    category: 'Tools'
+  },
+  {
+    id: 'tape-measure',
+    name: 'Tape Measure',
+    aliases: ['measuring tape'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Tape measures are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions on standard tape measures.',
+    category: 'Tools'
+  },
+  {
+    id: 'flashlight',
+    name: 'Flashlight',
+    aliases: ['torch'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Flashlights are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions. Remove batteries if possible for checked bags.',
+    category: 'Tools'
+  },
+  {
+    id: 'multitool',
+    name: 'Multitool',
+    aliases: ['swiss army knife', 'leatherman'],
+    carryOn: 'restricted',
+    checkedBag: 'allowed',
+    description: 'Multitools have blade length restrictions for carry-on.',
+    rules: 'Blades must be shorter than 4 inches to be allowed in carry-on.',
+    category: 'Tools'
+  },
 
-  // Food
+  // Food - Top 10
   {
     id: 'sandwich',
     name: 'Sandwich',
@@ -191,8 +541,88 @@ export const tsaItems: TSAItem[] = [
     rules: 'Must be 3.4 oz or smaller containers for carry-on and fit in quart bag.',
     category: 'Food'
   },
+  {
+    id: 'baby-food',
+    name: 'Baby Food',
+    aliases: ['infant food', 'baby formula'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Baby food and formula are allowed in reasonable quantities.',
+    rules: 'Reasonable quantities allowed. May require additional screening.',
+    category: 'Food'
+  },
+  {
+    id: 'chocolate',
+    name: 'Chocolate',
+    aliases: ['candy', 'sweets'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Solid chocolate is allowed in both carry-on and checked bags.',
+    rules: 'No restrictions on solid chocolate.',
+    category: 'Food'
+  },
+  {
+    id: 'fruit',
+    name: 'Fresh Fruit',
+    aliases: ['apples', 'bananas', 'oranges'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Fresh fruit is allowed in both carry-on and checked bags.',
+    rules: 'No restrictions on fresh fruit. Some fruits may be subject to agricultural inspection.',
+    category: 'Food'
+  },
+  {
+    id: 'granola-bar',
+    name: 'Granola Bar',
+    aliases: ['energy bar', 'protein bar'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Granola bars and energy bars are allowed.',
+    rules: 'No restrictions on solid food bars.',
+    category: 'Food'
+  },
+  {
+    id: 'chips',
+    name: 'Chips',
+    aliases: ['potato chips', 'snacks'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Chips and similar snacks are allowed.',
+    rules: 'No restrictions on solid snacks.',
+    category: 'Food'
+  },
+  {
+    id: 'yogurt',
+    name: 'Yogurt',
+    aliases: ['dairy product'],
+    carryOn: 'restricted',
+    checkedBag: 'allowed',
+    description: 'Yogurt is considered a liquid/gel.',
+    rules: 'Must be 3.4 oz or smaller containers for carry-on and fit in quart bag.',
+    category: 'Food'
+  },
+  {
+    id: 'honey',
+    name: 'Honey',
+    aliases: ['natural sweetener'],
+    carryOn: 'restricted',
+    checkedBag: 'allowed',
+    description: 'Honey is considered a liquid/gel.',
+    rules: 'Must be 3.4 oz or smaller containers for carry-on and fit in quart bag.',
+    category: 'Food'
+  },
+  {
+    id: 'olive-oil',
+    name: 'Olive Oil',
+    aliases: ['cooking oil'],
+    carryOn: 'restricted',
+    checkedBag: 'allowed',
+    description: 'Olive oil is considered a liquid.',
+    rules: 'Must be 3.4 oz or smaller containers for carry-on and fit in quart bag.',
+    category: 'Food'
+  },
 
-  // Sporting Goods
+  // Sports - Top 10
   {
     id: 'baseball-bat',
     name: 'Baseball Bat',
@@ -213,8 +643,88 @@ export const tsaItems: TSAItem[] = [
     rules: 'Pack in hard case or golf bag. Check with airline for fees and restrictions.',
     category: 'Sports'
   },
+  {
+    id: 'tennis-racket',
+    name: 'Tennis Racket',
+    aliases: ['tennis equipment'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Tennis rackets are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions on tennis rackets.',
+    category: 'Sports'
+  },
+  {
+    id: 'basketball',
+    name: 'Basketball',
+    aliases: ['sports ball'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Basketballs are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions on sports balls.',
+    category: 'Sports'
+  },
+  {
+    id: 'football',
+    name: 'Football',
+    aliases: ['soccer ball', 'sports ball'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Footballs are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions on sports balls.',
+    category: 'Sports'
+  },
+  {
+    id: 'hockey-stick',
+    name: 'Hockey Stick',
+    aliases: ['hockey equipment'],
+    carryOn: 'prohibited',
+    checkedBag: 'allowed',
+    description: 'Hockey sticks are prohibited in carry-on luggage.',
+    rules: 'Must be packed in checked baggage. May require special sporting goods procedures.',
+    category: 'Sports'
+  },
+  {
+    id: 'skateboard',
+    name: 'Skateboard',
+    aliases: ['skateboarding equipment'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Skateboards are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions on skateboards.',
+    category: 'Sports'
+  },
+  {
+    id: 'bicycle',
+    name: 'Bicycle',
+    aliases: ['bike', 'cycling equipment'],
+    carryOn: 'prohibited',
+    checkedBag: 'restricted',
+    description: 'Bicycles require special handling and may incur fees.',
+    rules: 'Must be packed in bike case or box. Check with airline for fees and procedures.',
+    category: 'Sports'
+  },
+  {
+    id: 'fishing-pole',
+    name: 'Fishing Pole',
+    aliases: ['fishing equipment', 'fishing rod'],
+    carryOn: 'prohibited',
+    checkedBag: 'allowed',
+    description: 'Fishing poles are prohibited in carry-on luggage.',
+    rules: 'Must be packed in checked baggage. May require special handling.',
+    category: 'Sports'
+  },
+  {
+    id: 'bowling-ball',
+    name: 'Bowling Ball',
+    aliases: ['bowling equipment'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Bowling balls are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions on bowling balls.',
+    category: 'Sports'
+  },
 
-  // Weapons
+  // Weapons - Top 10
   {
     id: 'gun',
     name: 'Firearm',
@@ -225,8 +735,98 @@ export const tsaItems: TSAItem[] = [
     rules: 'Must be declared, unloaded, locked in hard case, and ammunition packed separately. Check federal and state laws.',
     category: 'Weapons'
   },
+  {
+    id: 'ammunition',
+    name: 'Ammunition',
+    aliases: ['bullets', 'cartridges'],
+    carryOn: 'prohibited',
+    checkedBag: 'restricted',
+    description: 'Ammunition requires special handling and declaration.',
+    rules: 'Must be declared and packed separately from firearms. Check federal and state laws.',
+    category: 'Weapons'
+  },
+  {
+    id: 'stun-gun',
+    name: 'Stun Gun',
+    aliases: ['taser', 'electronic weapon'],
+    carryOn: 'prohibited',
+    checkedBag: 'prohibited',
+    description: 'Stun guns are prohibited in both carry-on and checked bags.',
+    rules: 'Completely prohibited on all flights.',
+    category: 'Weapons'
+  },
+  {
+    id: 'pepper-spray',
+    name: 'Pepper Spray',
+    aliases: ['mace', 'self-defense spray'],
+    carryOn: 'prohibited',
+    checkedBag: 'restricted',
+    description: 'Pepper spray is restricted and may be prohibited.',
+    rules: 'Check with airline and destination laws. Generally prohibited.',
+    category: 'Weapons'
+  },
+  {
+    id: 'knife-weapon',
+    name: 'Combat Knife',
+    aliases: ['fighting knife', 'weapon knife'],
+    carryOn: 'prohibited',
+    checkedBag: 'restricted',
+    description: 'Combat knives are prohibited in carry-on and restricted in checked bags.',
+    rules: 'May be allowed in checked bags if properly declared. Check with airline.',
+    category: 'Weapons'
+  },
+  {
+    id: 'brass-knuckles',
+    name: 'Brass Knuckles',
+    aliases: ['knuckle duster'],
+    carryOn: 'prohibited',
+    checkedBag: 'prohibited',
+    description: 'Brass knuckles are prohibited in both carry-on and checked bags.',
+    rules: 'Completely prohibited on all flights.',
+    category: 'Weapons'
+  },
+  {
+    id: 'nunchucks',
+    name: 'Nunchucks',
+    aliases: ['nunchaku'],
+    carryOn: 'prohibited',
+    checkedBag: 'restricted',
+    description: 'Nunchucks are prohibited in carry-on and restricted in checked bags.',
+    rules: 'May be allowed in checked bags if properly declared. Check with airline.',
+    category: 'Weapons'
+  },
+  {
+    id: 'throwing-stars',
+    name: 'Throwing Stars',
+    aliases: ['shuriken'],
+    carryOn: 'prohibited',
+    checkedBag: 'restricted',
+    description: 'Throwing stars are prohibited in carry-on and restricted in checked bags.',
+    rules: 'May be allowed in checked bags if properly declared. Check with airline.',
+    category: 'Weapons'
+  },
+  {
+    id: 'crossbow',
+    name: 'Crossbow',
+    aliases: ['bow weapon'],
+    carryOn: 'prohibited',
+    checkedBag: 'restricted',
+    description: 'Crossbows are prohibited in carry-on and restricted in checked bags.',
+    rules: 'May be allowed in checked bags if properly declared. Check with airline.',
+    category: 'Weapons'
+  },
+  {
+    id: 'airsoft-gun',
+    name: 'Airsoft Gun',
+    aliases: ['toy gun', 'replica weapon'],
+    carryOn: 'prohibited',
+    checkedBag: 'restricted',
+    description: 'Airsoft guns are prohibited in carry-on and restricted in checked bags.',
+    rules: 'May be allowed in checked bags if properly declared. Check with airline.',
+    category: 'Weapons'
+  },
 
-  // Miscellaneous
+  // Miscellaneous - Top 10
   {
     id: 'lighter',
     name: 'Lighter',
@@ -256,6 +856,76 @@ export const tsaItems: TSAItem[] = [
     description: 'Umbrellas are generally allowed in both carry-on and checked bags.',
     rules: 'Standard umbrellas allowed. May be subject to additional screening.',
     category: 'Miscellaneous'
+  },
+  {
+    id: 'camera-tripod',
+    name: 'Camera Tripod',
+    aliases: ['tripod'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Camera tripods are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions on standard tripods.',
+    category: 'Miscellaneous'
+  },
+  {
+    id: 'musical-instrument',
+    name: 'Musical Instrument',
+    aliases: ['guitar', 'violin', 'piano'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Musical instruments are allowed in both carry-on and checked bags.',
+    rules: 'Fragile instruments should be carried on. Large instruments may require special handling.',
+    category: 'Miscellaneous'
+  },
+  {
+    id: 'book',
+    name: 'Book',
+    aliases: ['magazine', 'newspaper'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Books are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions on books and reading materials.',
+    category: 'Miscellaneous'
+  },
+  {
+    id: 'candle',
+    name: 'Candle',
+    aliases: ['wax candle'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Candles are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions on standard candles.',
+    category: 'Miscellaneous'
+  },
+  {
+    id: 'battery',
+    name: 'Battery',
+    aliases: ['alkaline battery', 'lithium battery'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Batteries are allowed with restrictions based on type.',
+    rules: 'Alkaline batteries allowed. Lithium batteries under 100Wh allowed. Spare lithium batteries in carry-on only.',
+    category: 'Miscellaneous'
+  },
+  {
+    id: 'lock',
+    name: 'Lock',
+    aliases: ['padlock', 'combination lock'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Locks are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions on standard locks.',
+    category: 'Miscellaneous'
+  },
+  {
+    id: 'toy',
+    name: 'Toy',
+    aliases: ['children toy', 'game'],
+    carryOn: 'allowed',
+    checkedBag: 'allowed',
+    description: 'Toys are allowed in both carry-on and checked bags.',
+    rules: 'No restrictions on standard toys. Battery-operated toys follow battery rules.',
+    category: 'Miscellaneous'
   }
 ];
 
@@ -268,11 +938,11 @@ export const searchItems = (query: string): TSAItem[] => {
     item.name.toLowerCase().includes(lowercaseQuery) ||
     item.aliases.some(alias => alias.toLowerCase().includes(lowercaseQuery)) ||
     item.category.toLowerCase().includes(lowercaseQuery)
-  ).slice(0, 10); // Limit to 10 results
+  ).slice(0, 20); // Increased limit to 20 results since we have more items
 };
 export const getItemsByCategory = (category: string): TSAItem[] => {
-  if (category === 'all') return tsaItems;
-  return tsaItems.filter(item => item.category === category);
+  if (category === 'all') return tsaItems.slice(0, 50); // Show top 50 for "all" category
+  return tsaItems.filter(item => item.category === category).slice(0, 10); // Show top 10 per category
 };
 
 export const getAllCategories = (): string[] => {
